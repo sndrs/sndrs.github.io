@@ -1,4 +1,8 @@
 ---
 ---
 
-@import "main";
+@import "../_components/meyer-reset/stylesheets/_meyer-reset";
+
+body {
+  line-height: 1.5;
+}

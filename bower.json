@@ -1,0 +1,18 @@
+{
+  "name": "sndrs.github.io",
+  "version": "0.0.0",
+  "homepage": "http://sndrs.github.io",
+  "authors": [
+    "Alex Sanders <a@snd.rs>"
+  ],
+  "main": "/index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_components/",
+    "test",
+    "tests"
+  ]
+}
