@@ -1,6 +1,14 @@
+name: "sndrs.github.io"
+description: "Edge-cases, details etc."
 defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
+    -
+        scope:
+            path: ""
+        values:
+            layout: "default-template"
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            layout: "post-template"
