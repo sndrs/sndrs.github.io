@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-  <link rel="stylesheet" href="/style.css">
+  <title>{{ page.title }} &bull; {{ site.name }}</title>
+  {% include head.html %}
 </head>
 <body itemscope itemType="http://schema.org/BlogPosting">
-    <header>
-        <h2 class="blog__title">{{ site.name }}</h2>
-        <h1 itemprop="headline">{{ page.title }}</h1>
-    </header>
+    {% include header.html %}
 
-    {{ content }}
+    <article>
+        <h1>{{ page.title }} <time itemprop="datePublished" datetime="{{ page.date }}" pubdate="{{ page.date }}">{{ page.date | date: site.date-format }}</time></h1>
+
+        {{ content }}
+    </article>
+
+    {% include footer.html %}
 </body>
 </html>

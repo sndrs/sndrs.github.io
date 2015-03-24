@@ -1,5 +1,7 @@
 name: "sndrs.github.io"
 description: "Edge-cases, details etc."
+date-format: "%F"
+
 defaults:
     -
         scope:

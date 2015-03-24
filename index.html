@@ -4,7 +4,7 @@
 <ol class="posts">
     {% for post in site.posts %}
     <li class="post__link">
-        <a href="{{ post.url }}">{{ post.title }}</a> <span class="post__date">{{ post.date | date: "%F" }}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a> <time datetime="{{ page.date }}">{{ post.date | date: site.date-format }}</time>
     </li>
     {% endfor %}
 </ol>

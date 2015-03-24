@@ -2,6 +2,7 @@
 ---
 
 @import "../_components/meyer-reset/stylesheets/_meyer-reset";
+@import "colours";
 @import "type";
 
 body {
@@ -12,10 +13,10 @@ body {
 
 a {
     text-decoration: none;
-    color: blue;
+    color: $link;
 
     &:visited {
-        color: steelblue;
+        color: $link-visited;
     }
 }
 
@@ -39,6 +40,13 @@ header {
 
 .blog__title {
     // margin-bottom: 1rem;
+    a {
+        color: initial;
+
+        &:hover {
+            color: $link-hover;
+        }
+    }
 }
 
 .blog__description {
@@ -50,11 +58,35 @@ header {
 
 }
 
-.post__date {
+time {
     font-size: $font-small;
     margin-left: 1em;
 }
 
 [itemprop="headline"] {
 
+}
+
+.contact-info {
+    display: none;
+}
+
+footer {
+    font-size: $font-small;
+    margin-top: 2rem;
+}
+
+.copyright {
+
+}
+
+.icon {
+
+}
+
+.icon-twitter {
+    height: $font-small;
+    width: auto;
+    margin-right: .2em;
+    vertical-align: middle;
 }
